@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Ranga-Regular'; /* Give a name to the font */
+    src: url('/Ranga-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Manrope'; /* Give a name to the font */
+    src: url('/Manrope.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
