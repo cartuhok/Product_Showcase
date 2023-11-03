@@ -16,7 +16,7 @@ export default function CanvasContainer() {
     return (
         <Canvas className="overflow-hidden max-w-full">
             {/* <OrbitControls enableZoom={false} /> */}
-            <Environment files={ '/fish_hoek_beach_2k.hdr' }/>
+            <Environment files={ './fish_hoek_beach_2k.hdr' }/>
             <Camera/>
         </Canvas>
     )

@@ -8,7 +8,7 @@ import * as THREE from 'three';
 gsap.registerPlugin(ScrollTrigger)
 
 export function Camera(props) {
-  const { nodes, materials } = useGLTF("/Camera.glb");
+  const { nodes, materials } = useGLTF("./Camera.glb");
 
   const [scale, setScale] = useState(window.innerWidth <= 1024 ? 0.7 : 1)
   const [lensPos, setLensPos] = useState(window.innerWidth <= 1024 ? [0.003, -0.031, 0.71] : [ 0.005, -0.031, 0.71])
@@ -45,7 +45,7 @@ export function Camera(props) {
   const tl1 = gsap.timeline()
   const tl2 = gsap.timeline()
 
-  const videoTexture = useVideoTexture("/beach2.mp4")
+  const videoTexture = useVideoTexture("./beach2.mp4")
 
   const cameraRef = useRef(null)
   const sonyCameraRef = useRef(null)
@@ -727,4 +727,4 @@ export function Camera(props) {
   </>);
 }
 
-useGLTF.preload("/Camera.glb");
+useGLTF.preload("./Camera.glb");
