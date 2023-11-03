@@ -9,7 +9,7 @@ export default {
     ],
     root: 'src/',
     publicDir: "../public/",
-    base: '/Camera/',
+    base: '/Product_Showcase/',
     server:
     {
         host: true,
